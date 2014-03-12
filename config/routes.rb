@@ -1,8 +1,11 @@
 Depot::Application.routes.draw do
+<<<<<<< HEAD
   resources :line_items
 
   resources :carts
 
+=======
+>>>>>>> d36e1e29dbba2cfb23a9ba4215c8e2f76246cb9e
   get "store/index"
   resources :products
 

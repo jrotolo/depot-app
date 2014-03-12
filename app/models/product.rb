@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
 	default_scope :order => 'title'
+<<<<<<< HEAD
 	has_many :line_items
 
 	before_destroy :ensure_not_referenced_by_any_line_item
@@ -13,6 +14,8 @@ class Product < ActiveRecord::Base
 			return false;
 		end
 	end
+=======
+>>>>>>> d36e1e29dbba2cfb23a9ba4215c8e2f76246cb9e
 
 	# Validations
 	validates :title, :description, :image_url, :presence => true
